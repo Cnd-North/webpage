@@ -21,6 +21,26 @@ def load_lottieurl(url):
 
 # Load assets
 lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
+lottie_square_interactivity = """
+
+<lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_teb36nos.json" style="width:400px; height: 400px;">"></lottie-player>
+
+<script>
+LottieInteractivity.create({
+    mode:"scroll",
+    player:'#firstLottie',
+    actions: [
+        {
+            visibility:[0,1],
+            type: "seek",
+            frames: [0, 31],
+        },
+    ]
+});
+</script>
+
+"""
+
 img_key_draw_0 = Image.open("images/key_draw_0.png")
 
 # Header Section
@@ -51,7 +71,8 @@ with st.container():
         st.write("[Github profile >](https://github.com/Cnd-North)")
 
     with right_column:
-        st_lottie(lottie_rising_squares, height=300, key="squares")
+        #st_lottie(lottie_rising_squares, height=300, key="squares")
+        st.markdown(lottie_square_interactivity)
 
 
 
