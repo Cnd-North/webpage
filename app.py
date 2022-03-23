@@ -2,10 +2,26 @@
 # 2022-03-22 
 # Streamlit web-app
 
-
+from PIL import Image
+import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Gerrit's space on the web", page_icon=":pizza:", layout="wide")
+
+
+
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+
+# Load assets
+lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
+img_key_draw_0 = Image.open("images/key_draw_0.png")
 
 # Header Section
 with st.container():
@@ -16,7 +32,7 @@ with st.container():
 
 # What I do
 with st.container():
-    st.write("---")  # insort horizontal divider line
+    st.write("---")  # insert horizontal divider line
     left_column, right_column = st.columns(2)
     with left_column:
         st.header("What I do")
@@ -28,13 +44,35 @@ with st.container():
         
         
         
-        
-        
-        
-        
+
         
             """
         )
-        st.write("[Github profile >] (https://github.com/Cnd-North)")
+        st.write("[Github profile >](https://github.com/Cnd-North)")
+
+    with right_column:
+        st_lottie(lottie_rising_squares, height=300, key="squares")
 
 
+
+
+# Projects
+
+with st.container():
+    st.write("---")
+    st.header("My Projects")
+    st.write("##")
+    image_column, text_column = st.columns((1, 2))
+
+    with image_column:
+        st.image(img_key_draw_0)
+
+    with text_column:
+        st.subheader("One of my porjects focuses on..")
+
+        st.write(
+            """
+            Additional text
+            """
+        )
+        st.markdown("[Additional hyperlink to project](https://www.duckduckgo.com)")
