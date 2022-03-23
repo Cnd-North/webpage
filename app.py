@@ -76,3 +76,19 @@ with st.container():
             """
         )
         st.markdown("[Additional hyperlink to project](https://www.duckduckgo.com)")
+
+# with st.container():
+#     image_column, text_column = st.columns((1, 2))
+
+#     with image_column:
+#         st.image(image variable name)
+    
+#     with text_column:
+#         st.subheader("One of my porjects focuses on..")
+
+#         st.write(
+#             """
+#             Additional text
+#             """
+#         )
+#         st.markdown("[Additional hyperlink to project](https://www.duckduckgo.com)")
