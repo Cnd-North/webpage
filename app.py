@@ -15,7 +15,7 @@ with st.container():
 
 
 # What I do
-with st.comntainer():
+with st.container():
     st.write("---")  # insort horizontal divider line
     left_column, right_column = st.columns(2)
     with left_column:
@@ -37,4 +37,4 @@ with st.comntainer():
         )
         st.write("[Github profile >] (https://github.com/Cnd-North)")
 
-        
+
