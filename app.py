@@ -21,7 +21,9 @@ def load_lottieurl(url):
 
 # Load assets
 
-lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
+lottie_science_reading = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_au98facn.json")
+
+#lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
 # lottie_square_interactivity = """
 
 # <lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_teb36nos.json" style="width:400px; height: 400px;">"></lottie-player>
@@ -43,6 +45,7 @@ lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages
 # """
 
 img_key_draw_0 = Image.open("images/key_draw_0.png")
+img_sales_prediction_0 = Image.open("images/sales_prediction_0.png")
 
 # Header Section
 with st.container():
@@ -72,7 +75,7 @@ with st.container():
         st.write("[Github profile >](https://github.com/Cnd-North)")
 
     with right_column:
-        st_lottie(lottie_rising_squares, height=300, key="squares")
+        st_lottie(lottie_science_reading, height=300, key="squares")
  
 
 
@@ -90,27 +93,34 @@ with st.container():
         st.image(img_key_draw_0)
 
     with text_column:
-        st.subheader("One of my porjects focuses on..")
+        st.subheader("Key code extraction from images of key")
 
         st.write(
             """
-            Additional text
+            The goal of the project is to store a digital version of physical keys as a backup.
+
+            The Project is segmented into Three Phases - Currently on the first phase
+                Phase 1 - Generate a dataset in the tens of thousands of keys and associated key codes.
+                Phase 2 - Train a machine learning model to read key code based on images of keys.
+                Phase 3 - Test the trained model on images real keys.
             """
         )
         st.markdown("[Additional hyperlink to project](https://www.duckduckgo.com)")
 
-# with st.container():
-#     image_column, text_column = st.columns((1, 2))
+with st.container():
+    image_column, text_column = st.columns((1, 2))
 
-#     with image_column:
-#         st.image(image variable name)
+    with image_column:
+        st.image(img_sales_prediction_0)
     
-#     with text_column:
-#         st.subheader("One of my porjects focuses on..")
+    with text_column:
+        st.subheader("Sales Prediction using VARMAX")
 
-#         st.write(
-#             """
-#             Additional text
-#             """
-#         )
-#         st.markdown("[Additional hyperlink to project](https://www.duckduckgo.com)")
+        st.write(
+            """
+            Time Series Analysis & Forecasting of Store Sales using VARMAX.
+            
+            """
+        )
+        st.markdown("[Partners Github: Abdul](https://github.com/abdul-data-diaries)")
+        st.markdown("[Kaggle: Store Sales](https://www.kaggle.com/c/store-sales-time-series-forecasting)")
