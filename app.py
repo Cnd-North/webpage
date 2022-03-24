@@ -65,8 +65,8 @@ with st.container():
         st.write("##")
         st.write(
             """
-        Currently working on a few projects - most of them are within python.
-        
+        Currently working on a few projects - most of them are within Python.
+        Reading up on SQL & Julia.
         
         
         
