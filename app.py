@@ -46,6 +46,8 @@ lottie_science_reading = load_lottieurl("https://assets2.lottiefiles.com/package
 
 img_key_draw_0 = Image.open("images/key_draw_0.png")
 img_sales_prediction_0 = Image.open("images/sales_prediction_0.png")
+img_sha_256 = Image.open("images/sha_256_gml_0.png")
+
 
 # Header Section
 with st.container():
@@ -124,3 +126,25 @@ with st.container():
         )
         st.markdown("[Partners Github: Abdul](https://github.com/abdul-data-diaries)")
         st.markdown("[Kaggle: Store Sales](https://www.kaggle.com/c/store-sales-time-series-forecasting)")
+
+
+with st.container():
+    image_column, text_column = st.columns((1, 2))
+
+    with image_column:
+        st.image(img_sha_256
+        )
+    
+    with text_column:
+        st.subheader("Hardware implementation of SHA-256")
+
+        st.write(
+            """
+            Implementing the SHA-256 algorithm in Verilog.
+            Validating the output with the SHA-256 algorithm implemented in python.
+            Illustarted using GraphML
+            
+            """
+        )
+        st.markdown("[Partners Github: JL](https://github.com/jt-l)")
+        st.markdown("[Wikipedia: SHA-2 Hashing Family](https://en.wikipedia.org/wiki/SHA-2)")
