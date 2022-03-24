@@ -141,7 +141,7 @@ with st.container():
         st.write(
             """
             Implementing the SHA-256 algorithm in Verilog.
-            Validating the output with the SHA-256 algorithm implemented in python.
+            Validating the output with a SHA-256 algorithm implemented in python.
             Illustarted using GraphML
             
             """
