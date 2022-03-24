@@ -124,7 +124,7 @@ with st.container():
             
             """
         )
-        st.markdown("[Partners Github: Abdul](https://github.com/abdul-data-diaries)")
+        st.markdown("[Partner's Github: Abdul](https://github.com/abdul-data-diaries)")
         st.markdown("[Kaggle: Store Sales](https://www.kaggle.com/c/store-sales-time-series-forecasting)")
 
 
@@ -146,5 +146,5 @@ with st.container():
             
             """
         )
-        st.markdown("[Partners Github: JL](https://github.com/jt-l)")
+        st.markdown("[Partner's Github: JL](https://github.com/jt-l)")
         st.markdown("[Wikipedia: SHA-2 Hashing Family](https://en.wikipedia.org/wiki/SHA-2)")
