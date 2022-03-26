@@ -2,7 +2,7 @@
 
 echo "\
 [general]\n\
-email = \"your-email@domain.com\"\n\
+email = \"tirreg@duck.com\"\n\
 " > ~/.streamlit/credentials.toml
 
 echo "\
