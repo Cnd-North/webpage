@@ -1,2 +1,2 @@
 web: sh setup.sh && streamlit run app.py
-web: gunicorn gerritvr:app --log-file -
+web: gunicorn runserver:gerritvr --log-file -
