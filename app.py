@@ -2,7 +2,7 @@
 # 2022-03-22 
 # Streamlit web-app
 
-from tkinter import CENTER
+
 from PIL import Image
 import requests
 import streamlit as st
