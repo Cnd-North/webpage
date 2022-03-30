@@ -2,6 +2,7 @@
 # 2022-03-22 
 # Streamlit web-app
 
+from tkinter import CENTER
 from PIL import Image
 import requests
 import streamlit as st
@@ -29,7 +30,7 @@ lottie_science_reading = load_lottieurl("https://assets2.lottiefiles.com/package
         # components.html(github_contributions)
         # st.markdown(github_contributions, unsafe_allow_htlm=True)
         
-#github_contributions = ''' <img src="http://ghchart.rshah.org/0040ff/Cnd-North" alt="My GitHub Contribution" /> '''
+github_contributions = ''' <img src="http://ghchart.rshah.org/0040ff/Cnd-North" alt="My GitHub Contribution" /> '''
 
 #github_contributions = ("https://github.com/users/Cnd-North/contributions")
 #lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
@@ -84,7 +85,9 @@ with st.container():
             """
         )
 
-        st.write("[Github profile >](https://github.com/Cnd-North)")
+    st.markdown(github_contributions, unsafe_allow_html=True)
+    st.write("My Github Contributions", "[| Github profile |](https://github.com/Cnd-North)")
+
 
     with right_column:
         st_lottie(lottie_science_reading, height=300, key="squares")
