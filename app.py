@@ -6,6 +6,7 @@ from PIL import Image
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
+from streamlit.components.v1 import components
 
 st.set_page_config(page_title="Gerrit's space on the web", page_icon=":pizza:", layout="wide")
 
@@ -23,6 +24,14 @@ def load_lottieurl(url):
 
 lottie_science_reading = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_au98facn.json")
 
+
+# need to figure out how to incoprtate this into my site 
+        # components.html(github_contributions)
+        # st.markdown(github_contributions, unsafe_allow_htlm=True)
+        
+#github_contributions = ''' <img src="http://ghchart.rshah.org/0040ff/Cnd-North" alt="My GitHub Contribution" /> '''
+
+#github_contributions = ("https://github.com/users/Cnd-North/contributions")
 #lottie_rising_squares = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_teb36nos.json")
 # lottie_square_interactivity = """
 
@@ -74,6 +83,7 @@ with st.container():
         
             """
         )
+
         st.write("[Github profile >](https://github.com/Cnd-North)")
 
     with right_column:
