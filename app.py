@@ -54,7 +54,7 @@ github_contributions = ''' <img src="http://ghchart.rshah.org/0040ff/Cnd-North" 
 
 # """
 
-img_key_draw_0 = Image.open("images/key_draw_0.png")
+img_key_draw_0 = Image.open("images/edge.png")
 img_sales_prediction_0 = Image.open("images/sales_prediction_0.png")
 img_sha_256 = Image.open("images/sha_256_gml_0.png")
 
