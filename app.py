@@ -63,7 +63,7 @@ img_sha_256 = Image.open("images/sha_256_gml_0.png")
 with st.container():
     st.subheader("You've arrived - Welcome! :pineapple:")
     st.title("Multi-Disciplinary Problem Solver")
-    st.write("I am driven by my curiousity currently transitioning from Excel to Python")
+    st.write("Instinctive curiosity & critical thinking to solve problems with data at its core; a data stack of python, bash & sql")
 
 
 # What I do
