@@ -163,10 +163,9 @@ with st.container():
         st.markdown("[Wikipedia: SHA-2 Hashing Family](https://en.wikipedia.org/wiki/SHA-2)")
 
 
-
-    # Plans for webpage expansion:
+# Plans for webpage expansion:
     # Would be great to add in IP tracking and have it added to a sqlite3 database 
-        
+
     #     // get user details
     #     $user_agent = $_SERVER['HTTP_USER_AGENT']; //user browser
     #     $ip_address = $_SERVER["REMOTE_ADDR"];     // user ip adderss
@@ -189,3 +188,7 @@ with st.container():
     #     date_default_timezone_set('UTC');
     #     $date = date("Y-m-d");
     #     $time = date("H:i:s");
+
+# Potentially add more into the key decoding project
+    
+    
