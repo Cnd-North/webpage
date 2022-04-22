@@ -161,3 +161,8 @@ with st.container():
         )
         st.markdown("[Partner's Github: JL](https://github.com/jt-l)")
         st.markdown("[Wikipedia: SHA-2 Hashing Family](https://en.wikipedia.org/wiki/SHA-2)")
+
+
+
+        # Running to do list:
+        
