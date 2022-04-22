@@ -164,6 +164,10 @@ with st.container():
 
 
 # Plans for webpage expansion:
+
+# WOULD BE AWESOME TO ADD SOME SIDE PAGES FOR INFO ON BOOKS I'VE READ OR INCORPRATE STORY GRAPH 
+
+
     # Would be great to add in IP tracking and have it added to a sqlite3 database 
 
     #     // get user details
